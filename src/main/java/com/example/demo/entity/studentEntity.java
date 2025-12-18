@@ -8,7 +8,7 @@ import jakarta.validation.constraints.*;
 public class studentEntity{
     
     @Id
-    @GenerateValue(strategy = Generationtype.IDENTITY)
+    @GenerateValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message="Name is not valid")
@@ -17,11 +17,12 @@ public class studentEntity{
     @Email(message = "Email Format is not Valid")
     private String email;
 
-    public void setId(Long id){
-        this.id=id;
-    }
     public Long getId(){
         return id;
+    }
+    public Long setId()
+    {
+        this.id=id;
     }
     public studentEntity(){
 
