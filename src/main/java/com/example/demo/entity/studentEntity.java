@@ -3,10 +3,8 @@ package com.example.demo.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
-
 @entity
 public class studentEntity{
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,7 +18,7 @@ public class studentEntity{
     public Long getId(){
         return id;
     }
-    public Long setId()
+    public Long setId(Long id)
     {
         this.id=id;
     }
