@@ -3,7 +3,7 @@ package com.example.demo.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
-@entity
+@Entity
 public class studentEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
